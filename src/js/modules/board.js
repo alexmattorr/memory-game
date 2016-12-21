@@ -1,7 +1,5 @@
 function initBoard() {
-  console.log('hello');
-
-  var images = [
+  var cards = [
     '1',
     '2',
     '3',
@@ -10,16 +8,17 @@ function initBoard() {
     '6'
   ];
 
-  arr = shuffle(images);
+  arr = shuffle(cards);
 
-  function loopImages() {
+  function loopCards() {
     for(var i = 0; i < arr.length; i++) {
       // text += images[i] + "<br>";
-      var image = '<li data-image="' + images[i] + '"><h4>' + images[i] + '</h4></li>';
-      $board.append(image);
+      var card = '<li data-image="' + cards[i] + '"><h4>' + cards[i] + '</h4></li>';
+      $board.append(card);
     }
   }
 
-  loopImages();
-  loopImages();
+  // does loop twice to create enough cards
+  loopCards();
+  loopCards();
 }
