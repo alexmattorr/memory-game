@@ -1,7 +1,5 @@
 ;(function($){
   $(function(){
-		// call functions here
+    initBoard();
   });
-
-  // write functions here
 }(jQuery));

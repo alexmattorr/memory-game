@@ -166,7 +166,7 @@ module.exports = {
       styles: src + 'scss/**/*.scss',
       scripts: [src + 'js/**/*.js'],
       images: src + '**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)',
-      theme: src + '**/*.php',
+      theme: src + '**/*.html',
     },
     watcher: 'browsersync'
   }
